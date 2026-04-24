@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бруко - Кофейня</title>
+    <title>Бруко - Кав'ярня</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -108,6 +108,36 @@
                     <span>Сб–Нд: 09:00–22:00</span>
                 </div>
             </div>
+
+            <div class="feedback-form-wrapper">
+                <h3 class="form-title">Напишіть нам</h3>
+                <form id="feedback-form" novalidate>
+                    <div class="form-group">
+                        <label for="user-name">Ім'я</label>
+                        <input type="text" id="user-name" name="name" placeholder="Ваше ім'я">
+                        <span class="field-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email</label>
+                        <input type="email" id="user-email" name="email" placeholder="example@mail.com">
+                        <span class="field-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-message">Повідомлення</label>
+                        <textarea id="user-message" name="message" rows="4" placeholder="Ваше повідомлення..."></textarea>
+                        <span class="field-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="form-submit" id="submit-button">Надіслати</button>
+                </form>
+                <div class="form-success hidden" id="success-message">
+                    Дякуємо! Ваше повідомлення надіслано.
+                </div>
+            </div>
+
+            <div class="messages-list" id="messages-list">
+                <h3 class="messages-title">Останні повідомлення</h3>
+                <ul id="messages-ul"></ul>
+            </div>
         </section>
 
     </main>
@@ -123,5 +153,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

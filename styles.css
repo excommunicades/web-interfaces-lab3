@@ -264,6 +264,147 @@ footer {
     opacity: 0.7;
 }
 
+.feedback-form-wrapper {
+    max-width: 500px;
+    margin: 40px auto 0;
+}
+
+.form-title {
+    font-size: 22px;
+    color: #2c1a0e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3b2314;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: "Georgia", serif;
+    font-size: 15px;
+    padding: 10px 14px;
+    border: 1px solid #e8ddd3;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #2c1a0e;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d4a574;
+}
+
+.form-group input.invalid,
+.form-group textarea.invalid {
+    border-color: #c0392b;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.field-error {
+    font-size: 13px;
+    color: #c0392b;
+    min-height: 20px;
+    margin-top: 4px;
+}
+
+.form-submit {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2c1a0e;
+    background-color: #d4a574;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #c4955e;
+}
+
+.form-success {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #27763d;
+    background-color: #eaf5ec;
+    border: 1px solid #b6dfc1;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.messages-list {
+    max-width: 500px;
+    margin: 40px auto 0;
+    display: none;
+}
+
+.messages-list.visible {
+    display: block;
+}
+
+.messages-title {
+    font-size: 20px;
+    color: #2c1a0e;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.messages-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message-card {
+    background-color: #ffffff;
+    border: 1px solid #e8ddd3;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.message-card-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #3b2314;
+}
+
+.message-card-email {
+    font-size: 13px;
+    color: #d4a574;
+    margin-bottom: 8px;
+}
+
+.message-card-text {
+    font-size: 14px;
+    color: #6b5344;
+    line-height: 1.5;
+}
+
 @media (min-width: 768px) {
     .header-container {
         flex-direction: row;
